@@ -1,0 +1,119 @@
+body{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;;
+}
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+position: sticky;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #0078d4;
+    color: white;
+  }
+
+.content{
+    background-color: #f2f2f2;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.alert{
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.alert-content{
+  float: left;
+  text-align: justify;
+  width: 1000px;
+
+}
+
+footer{
+    background-color: #f2f2f2;
+    padding: 1px;
+    text-align: center;
+}
+
+
+/*sub2.html*/
+
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-1 {
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+
+.vertical-navbar{
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  display: block;
+  float:left;
+}
+
+.gallery-wrapper{
+  margin: 15px;
+  border: solid black 5px;
+  float: right;
+  width: 80%;
+
+}

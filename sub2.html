@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #fff;" onload="galleryChange(1)">
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sub1.html">Why Windows?</a></li>
+                <li><a href="sub2.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <div class="alert">
+            <img src="logo.png" style="width: 100px; float: left;"/>
+            <div class="alert-content" style="width: 500px; float: left; margin-left: 480px;">
+                <h1>Gallery</h1>
+            </div>
+            <img src="logo.png" style="width: 100px;"/>
+            <div style="clear: both;"></div>
+        </div>
+        <br>
+
+        <div class="content" id="gallery-content">
+            <div class="vertical-navbar">
+                <button class="custom-btn btn-1" onclick="galleryChange(1)">Windows 11</button><br>
+                <button class="custom-btn btn-1" onclick="galleryChange(2)">Windows 10</button><br>
+                <button class="custom-btn btn-1" onclick="galleryChange(3)">Windows 8</button><br>
+                <button class="custom-btn btn-1" onclick="galleryChange(4)">Windows 7</button><br>
+                <button class="custom-btn btn-1" style="height: 50px;" onclick="galleryChange(5)">Windows Vista</button><br>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="gallery-content">
+                    <img src="gallery/win11.png" style="width: 100%; height: 100%;">
+                </div>
+                <div class="gallery-content">
+                    <img src="gallery/win10.png" style="width: 100%; height: 100%;">
+                </div>
+                <div class="gallery-content">
+                    <img src="gallery/win8.png" style="width: 100%; height: 100%;">
+                </div>
+                <div class="gallery-content">
+                    <img src="gallery/win7.png" style="width: 100%; height: 100%;">
+                </div>
+                <div class="gallery-content">
+                    <img src="gallery/winvista.png" style="width: 100%; height: 100%;">
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    
+
+    <script>
+        function galleryChange(num){
+            var gallery = document.getElementsByClassName("gallery-content");
+            for(var i = 0; i < gallery.length; i++){
+                gallery[i].style.display = "none";
+            }
+            gallery[num-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
